@@ -39,7 +39,7 @@ const ApiPage = () => {
   }, [start, amount, current]);
 
   if (!current || typeof current !== "object") {
-    return <p>Loading...</p>;
+    return <p></p>;
   }
 
   return (
