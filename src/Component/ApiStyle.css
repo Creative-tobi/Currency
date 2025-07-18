@@ -102,3 +102,19 @@ input{
     padding: 8px;
 }
 }
+
+ul{
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    background-color: blue;
+    width: 200px;
+}
+
+ul li NavLink{
+    text-decoration: none;
+}
+/* .isActive{
+    border-radius: 12px;
+    background-color: red;
+} */
