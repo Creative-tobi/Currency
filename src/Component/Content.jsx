@@ -10,7 +10,7 @@ const Content = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-amber-200 font-md bg-white rounded-md" : "text-white"
+              isActive ? "text-amber-200 font-md bg-white rounded-md" : "text-gray-600"
             }>
             Currency
           </NavLink>
@@ -20,7 +20,7 @@ const Content = () => {
           <NavLink
             to="/WeatherApi"
             className={({ isActive }) =>
-              isActive ? "text-amber-200 font-md bg-white rounded-md" : "text-white"
+              isActive ? "text-amber-200 font-md bg-white rounded-md" : "text-gray-600"
             }>
             Weather
           </NavLink>

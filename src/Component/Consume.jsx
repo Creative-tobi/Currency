@@ -47,29 +47,31 @@ const Consume = () => {
     <>
       <div className="first">
         <div className="childOne">
-            <h3>Swap Currency</h3>
-          <div className='hello'>
+          <h3>Swap Currency</h3>
+          <div className="hello">
             <p>Nigeria Currency</p>
             <h3>NGN</h3>
-          </div> <br />
-
+          </div>{" "}
+          <br />
           <input
+          placeholder='0.00'
             type="number"
             min="0"
+            id='input'
             value={start}
             onChange={(e) => setStart(e.target.value)}
           />
         </div>
 
-        <div className='icon'>
-          <MdOutlineSwapVerticalCircle id='icon'/>
-        </div> 
+        {/* <div className="icon">
+          <MdOutlineSwapVerticalCircle id="icon" />
+        </div> */}
 
         <div className="childTwo">
+          {/* <h3>Converted To:</h3> */}
+          <div className="hello">
             <h3>Converted To:</h3>
-          <div className='hello'>
-
-            <p>{conversion} Currency</p>
+            {/* <p>{conversion} Currency</p> */}
             <select
               name=""
               id=""
@@ -81,8 +83,10 @@ const Consume = () => {
                 </option>
               ))}
             </select>
-          </div> <br />
-          <p id='final'>{finalPrice}</p>
+          </div>{" "}
+          <br />
+          <p id="final">{finalPrice}</p>
+          <p>{conversion} Currency</p>
         </div>
       </div>
     </>
