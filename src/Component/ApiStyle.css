@@ -59,10 +59,10 @@ select{
     padding: 4px;
     outline-color:  rgb(255, 219, 172);
     border-color: rgb(255, 219, 172);
-    color:  rgb(255, 219, 172);
+    color:  rgb(190, 179, 179);
     
 } 
-#final{
+#final, .sun{
     font-size: 40px;
     font-weight: 600;
 }
@@ -72,6 +72,14 @@ select{
     border: none;
     outline: none;
     /* text-align: center; */
+}
+#corn{
+     font-size: 40px;
+    font-weight: 50;
+}
+#cornn{
+    font-size: 20px;
+    font-weight: 50;
 }
 
 ul{
@@ -85,6 +93,32 @@ ul{
     margin: auto;
     width: 200px;
 }
+
+.wet{
+    margin: auto;
+    background: linear-gradient(to right, rgb(146, 51, 255), rgb(222, 62, 243));
+    color: white;
+    width: 300px;
+    padding: 12px;
+    text-align: center;
+    place-items: center;
+    border-radius: 12px;
+}
+.input{
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    padding: 2px 8px;
+    border: none;
+    outline: none;
+    margin-right: 4px;
+}
+
+#image{
+    width: 200px;
+    place-items: center;
+}
+
 
 
 

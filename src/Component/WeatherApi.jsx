@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { WiHumidity } from "react-icons/wi";
 import { LuWind } from "react-icons/lu";
+import { IoSearch } from "react-icons/io5";
+import cloud from "/public/cloud.png"
+
 
 const WeatherApi = () => {
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("Lagos");
   const [weather, setWeather] = useState([]);
   const [condition, setCondition] = useState(null);
 
@@ -45,37 +48,69 @@ const WeatherApi = () => {
 
   return (
     <>
-      <h2>The weather condition of {city}</h2>
+      <div className="wet">
+        <h2>The weather condition of {city}</h2>
 
-      <input
-        type="text"
-        value={city}
-        onChange={(e) => setCity(e.target.value)}
-        placeholder="Enter city/state name"
-      />
+        <input
+          type="text"
+          value={city}
+          className="input"
+          onChange={(e) => setCity(e.target.value)}
+          placeholder="Enter city/state name"
+        />
 
-      <button onClick={getWeatherData}>Weather Update</button>
+        <button
+          onClick={getWeatherData}
+          className="bg-white text-black p-2 rounded-full">
+          <IoSearch />
+        </button>
 
-      {weather.map((item, index) => (
-        <div key={index}>
-          <p>Country: {item.country} </p>
-          <p>State: {item.state || "N/A"}</p>
-        </div>
-      ))}
+        {weather.map((item, index) => (
+          <div key={index}>
+            <p>Country: {item.country} </p>
+            <p>State: {item.state || "N/A"}</p>
+          </div>
+        ))}
 
-      <WiHumidity />
-      <LuWind />
-      {condition ? (
-        <div>
-          <h2>Weather Details</h2>
-          <p>Temperature: {condition.main.temp}°C</p>
-          <p>Condition: {condition.weather[0].description}</p>
-          <p>Humidity: {condition.main.humidity}%</p>
-          <p>Wind Speed: {condition.wind.speed} m/s</p>
-        </div>
-      ) : (
-        <p></p>
-      )}
+        {condition ? (
+          <div>
+            <div>
+              <div>
+                <img src={cloud} alt="" id="image" />
+              </div>
+              <p className="sun">{condition.main.temp}°C</p>
+            </div>
+            {/* <h2>Weather Details</h2> */}
+            <p>{condition.weather[0].description}</p>
+
+            <div className="flex gap-4">
+              <div className="flex">
+                <p id="corn">
+                  <WiHumidity />
+                </p>
+                <pre>
+                  <p id="cornn">{condition.main.humidity}%</p>
+                  <p>Humidity</p>
+                </pre>
+              </div>
+
+              <div className="flex">
+                <p id="corn">
+                  <LuWind />
+                </p>
+                <pre>
+                  <p id="cornn">{condition.wind.speed} m/s</p>
+                  <p>Wind Speed</p>
+                </pre>
+              </div>
+            </div>
+
+            
+          </div>
+        ) : (
+          <p></p>
+        )}
+      </div>
     </>
   );
 };
