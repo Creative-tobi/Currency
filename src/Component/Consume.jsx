@@ -57,7 +57,7 @@ const Consume = () => {
           placeholder='0.00'
             type="number"
             min="0"
-            id='input'
+            id='input' className='text-center'
             value={start}
             onChange={(e) => setStart(e.target.value)}
           />

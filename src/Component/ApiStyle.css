@@ -5,29 +5,29 @@
 }
 
 .first{
-    background-color: rgb(224, 224, 224);
-    width: 50%;
-    place-items: center;
-    /* gap: 40px; */
+    /* background-color: rgb(224, 224, 224); */
+     background-color: rgb(255, 172, 172);
+    width: 300px;
+    /* place-items: center; */
     margin: auto;
     padding: 12px;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 20px;
     margin-top: 40px;
 }
 
 .childOne{
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(247, 245, 245);
     border-radius: 20px;
     /* padding: 30px 12px; */
-    text-align: center;
+    /* text-align: center; */
     padding: 12px;
     /* color: white;  */
     width: 100%;
 
 }
 .childTwo{
-     background-color: rgb(26, 26, 26);
+     background-color: rgb(15, 0, 0);
     border-radius: 20px;
     padding: 12px;
     width: 100%;
@@ -54,12 +54,12 @@
     justify-content: space-around;
 }
 select{
-    border: 2px solid  rgb(0, 39, 168);
+    border: 2px solid  rgb(255, 219, 172);
     border-radius: 20px;
     padding: 4px;
-    outline-color:  rgb(0, 39, 168);
-    border-color: rgb(0, 39, 168);
-    color:  rgb(0, 39, 168);
+    outline-color:  rgb(255, 219, 172);
+    border-color: rgb(255, 219, 172);
+    color:  rgb(255, 219, 172);
     
 } 
 #final{
@@ -71,86 +71,23 @@ select{
     font-weight: 200;
     border: none;
     outline: none;
-    /* outline: 2px solid black;
-    border-radius: 24px; */
-    text-align: center;
-    /* padding-left: 10px; */
+    /* text-align: center; */
 }
 
 ul{
     display: flex;
     gap: 12px;
     list-style: none;
-    background-color: blue;
+    background-color:  rgb(238, 236, 236);
+    padding: 6px;
+    padding-left: 20px;
+    border-radius: 12px;
+    margin: auto;
     width: 200px;
 }
 
-ul li NavLink{
-    text-decoration: none;
-}
-/* .icon{
-    background-color: white;
-    border: 1px solid rgb(224, 224, 224);
-} */
-/* 
-*/
-
-/* .childOne{
-    margin-bottom: 30px;
-} */
-/* .childTwo{
-    margin-top: 20px;
-}
 
 
-input{
-    padding: 12px;
-    border-radius: 12px;
-    border: none;
-    outline: 1px solid black;
-    text-align: center;
-} */
-/* #final{
-     padding: 8px;
-    border-radius: 12px;
-    text-align: center;
-    border: none;
-    outline: 1px solid black;
-    width: 200px;
-    margin-left: 200px;
-    
-}
-
-/* @media(max-width: 780px){
-    #icon{
-   top: 190px;
-   left: 320px;
-}
-
-#final{
-    margin-left: 50px;
-}
-} */
 
 
-/* @media(max-width: 500px){
-    #icon{
-   top: 190px;
-   left: 180px;
-}
 
-#final{
-    width: 120px;
-    margin-left: 20px;
-}
-
-input{
-    width: 120px;
-    padding: 8px;
-}
-} */
-
-/* .isActive{
-    border-radius: 12px;
-    background-color: red;
-} */
