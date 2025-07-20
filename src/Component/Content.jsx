@@ -12,7 +12,7 @@ const Content = () => {
             className={({ isActive }) =>
               isActive ? "text-pink-500 p-1 font-md bg-white rounded-md" : "text-gray-600"
             }>
-            Currency
+            C
           </NavLink>
         </li>
 
@@ -22,7 +22,7 @@ const Content = () => {
             className={({ isActive }) =>
               isActive ? "text-pink-500 p-1 font-md bg-white rounded-md" : "text-gray-600"
             }>
-            Weather
+            W
           </NavLink>
         </li>
       </ul>

@@ -10,6 +10,7 @@ const WeatherApi = () => {
   const [city, setCity] = useState("Lagos");
   const [weather, setWeather] = useState([]);
   const [condition, setCondition] = useState(null);
+  const [convert, setConvert] = useState(false);
 
   const getWeatherData = async () => {
     try {
@@ -46,15 +47,28 @@ const WeatherApi = () => {
     getWeatherData();
   }, []);
 
+ const toggleUnit = () => {
+   setConvert(!convert);
+ };
+
   return (
     <>
       <div className="wet">
-        <h2>The weather condition of {city}</h2>
+        {/* <h2>The weather condition of {city}</h2> */}
+
+        <div className="flex gap-8">
+          <a href="./WeatherApi">
+            <button>Location</button>
+          </a>
+          <a href="./Weather">
+            <button>Two Locations</button>
+          </a>
+        </div>
 
         <input
           type="text"
           value={city}
-          className="input"
+          id="put"
           onChange={(e) => setCity(e.target.value)}
           placeholder="Enter city/state name"
         />
@@ -78,7 +92,11 @@ const WeatherApi = () => {
               <div>
                 <img src={cloud} alt="" id="image" />
               </div>
-              <p className="sun">{condition.main.temp}°C</p>
+              <p className="sun">
+                {convert
+                  ? `${(condition.main.temp * 1.8 + 32).toFixed(2)}°F`
+                  : `${condition.main.temp}°C`}
+              </p>
             </div>
             {/* <h2>Weather Details</h2> */}
             <p>{condition.weather[0].description}</p>
@@ -104,12 +122,14 @@ const WeatherApi = () => {
                 </pre>
               </div>
             </div>
-
-            
           </div>
         ) : (
           <p></p>
         )}
+
+        <button onClick={toggleUnit}>
+          Show in {convert ? "Celsius (°C)" : "Fahrenheit (°F)"}
+        </button>
       </div>
     </>
   );

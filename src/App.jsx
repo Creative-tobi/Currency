@@ -9,13 +9,14 @@ import Content from './Component/Content'
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-      <Content/>
-      <Routes>
-        <Route path="/" element={<Consume/>}/>
-        <Route path="/weatherApi" element={<WeatherApi/>} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Content />
+        <Routes>
+          <Route path="/" element={<Consume />} />
+          <Route path="/weatherApi" element={<WeatherApi />} />
+          <Route path="/weather" element={<Weather />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
