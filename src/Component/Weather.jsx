@@ -74,7 +74,8 @@ const Weather = () => {
 
   return (
     <>
-     <div className="flex gap-8">
+      <div className="lg:w-150" id="wett">
+        <div className="flex gap-8">
           <Link to="./WeatherApi">
             <button>Location</button>
           </Link>
@@ -135,6 +136,7 @@ const Weather = () => {
                     ).toFixed(2)}°C`}
               </p>
             </div>
+
             <p>{condition.weather[0].description}</p>
             <p>{ondition.weather[0].description}</p>
 
