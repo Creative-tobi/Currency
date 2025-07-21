@@ -15,7 +15,7 @@ const WeatherApi = () => {
   const getWeatherData = async () => {
     try {
       const rain = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${
           import.meta.env.VITE_SKY_API
         }`
       );
