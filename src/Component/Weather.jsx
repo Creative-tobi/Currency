@@ -75,7 +75,6 @@ const Weather = () => {
   return (
     <>
       <div className="lg:w-150" id="wett">
-        {/* <h2>The weather condition of {city}</h2> */}
 
         <div className="flex gap-8">
           <a href="./WeatherApi">
@@ -117,7 +116,6 @@ const Weather = () => {
 
         {eather.map((item, index) => (
           <div key={index}>
-            {/* <p>Country: {item.country} </p> */}
             <p>State: {item.state || "N/A"}</p>
           </div>
         ))}
@@ -129,10 +127,6 @@ const Weather = () => {
                 <img src={cloud} alt="" id="image" />
               </div>
 
-              {/* <p>
-                {Math.abs(condition.main.temp - ondition.main.temp).toFixed(2)}
-                °C
-              </p> */}
               <p className="sun">
                 {convert
                   ? `${Math.abs(
@@ -143,7 +137,6 @@ const Weather = () => {
                     ).toFixed(2)}°C`}
               </p>
             </div>
-            {/* <h2>Weather Details</h2> */}
             <p>{condition.weather[0].description}</p>
             <p>{ondition.weather[0].description}</p>
 

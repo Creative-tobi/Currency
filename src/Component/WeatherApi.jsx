@@ -54,7 +54,6 @@ const WeatherApi = () => {
   return (
     <>
       <div className="wet">
-        {/* <h2>The weather condition of {city}</h2> */}
 
         <div className="flex gap-8">
           <a href="./WeatherApi">
@@ -98,7 +97,6 @@ const WeatherApi = () => {
                   : `${condition.main.temp}°C`}
               </p>
             </div>
-            {/* <h2>Weather Details</h2> */}
             <p>{condition.weather[0].description}</p>
 
             <div className="flex gap-4">

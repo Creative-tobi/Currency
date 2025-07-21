@@ -63,15 +63,10 @@ const Consume = () => {
           />
         </div>
 
-        {/* <div className="icon">
-          <MdOutlineSwapVerticalCircle id="icon" />
-        </div> */}
-
+       
         <div className="childTwo">
-          {/* <h3>Converted To:</h3> */}
           <div className="hello">
             <h3>Converted To:</h3>
-            {/* <p>{conversion} Currency</p> */}
             <select
               name=""
               id=""

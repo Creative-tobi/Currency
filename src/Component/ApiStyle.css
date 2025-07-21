@@ -1,44 +1,33 @@
 *{
     padding: auto;
     margin: auto;
-     /* background-color: rgb(247, 252, 255); */
-   /* background: linear-gradient(to right, rgb(146, 51, 255), rgb(222, 62, 243)); */
 }
 
 .first{
-    /* background-color: rgb(224, 224, 224); */
-     background-color: rgb(255, 172, 172);
+     background-color: rgb(15, 0, 0);
     width: 300px;
-    /* place-items: center; */
     margin: auto;
     padding: 12px;
-    /* text-align: center; */
     border-radius: 20px;
     margin-top: 40px;
 }
-/* section{
-    background-color: aqua;
-} */
 
 .childOne{
-    background-color: rgb(247, 245, 245);
+    background-color: rgb(26, 25, 25);
     border-radius: 20px;
-    /* padding: 30px 12px; */
-    /* text-align: center; */
+    text-align: center;
     padding: 12px;
-    /* color: white;  */
+    color: white; 
     width: 100%;
-
 }
 .childTwo{
-     background-color: rgb(15, 0, 0);
+     background-color: rgb(44, 44, 44);
     border-radius: 20px;
     padding: 12px;
     width: 100%;
     text-align: center; 
     color: white; 
     margin-top: 4px;
-
 }
 #icon{
     font-size: 50px;
@@ -88,7 +77,6 @@ select{
 
 ul{
     display: flex;
-    /* gap: 12px; */
     list-style: none;
     background-color:  rgb(238, 236, 236);
     padding: 6px;
@@ -112,7 +100,6 @@ ul{
     margin: auto;
     background: linear-gradient(to bottom, rgb(11, 0, 71), rgb(13, 0, 26));
     color: white;
-    /* width: 300px; */
     padding: 12px;
     text-align: center;
     place-items: center;
