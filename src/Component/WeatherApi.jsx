@@ -54,14 +54,13 @@ const WeatherApi = () => {
   return (
     <>
       <div className="wet">
-
         <div className="flex gap-8">
-          <a href="./WeatherApi">
+          <Link to="./WeatherApi">
             <button>Location</button>
-          </a>
-          <a href="./Weather">
+          </Link>
+          <Link to="./Weather">
             <button>Two Locations</button>
-          </a>
+          </Link>
         </div>
 
         <input
